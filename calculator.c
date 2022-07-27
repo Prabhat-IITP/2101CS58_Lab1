@@ -29,6 +29,10 @@ int main()
 		case '*':
 			printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
 			break;
+		// For Division
+		case '/':
+			printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+			break;
 		default:
 			printf("Error! please write a valid operator\n");
 		}
