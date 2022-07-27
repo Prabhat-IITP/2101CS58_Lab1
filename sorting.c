@@ -110,3 +110,27 @@ void quickSort(int arr[],int first,int last){
       quickSort(arr,j+1,last); 
    } 
 } 
+
+void printArray(int arr[], int n) 
+{ 
+    int i; 
+    for (i = 0; i < n; i++) 
+        printf("%d ", arr[i]); 
+    printf("\n"); 
+} 
+
+int main() { 
+    int n,m, arr[1000]; 
+    printf("Enter size of array: "); 
+    scanf("%d", &n); 
+    printf("Enter the array: "); 
+    for(int i= 0; i<n; ++i){ 
+        scanf("%d", &arr[i]); 
+    } 
+    printf("1- Insertion Sort \n"); 
+    printf("2- Selection Sort \n"); 
+    printf("3- Bubble Sort \n"); 
+    printf("4- Merge Sort \n"); 
+    printf("5- Quick Sort \n"); 
+    printf("Enter Sorting Method: "); 
+    scanf("%d", &m); 
