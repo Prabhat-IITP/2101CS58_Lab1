@@ -134,3 +134,30 @@ int main() {
     printf("5- Quick Sort \n"); 
     printf("Enter Sorting Method: "); 
     scanf("%d", &m); 
+    switch(m) { 
+        case 1: 
+        insertionSort(arr, n); 
+        printArray(arr,n); 
+        break; 
+        case 2: 
+        selectionSort(arr, n); 
+        printArray(arr, n); 
+        break; 
+        case 3: 
+        bubbleSort(arr, n); 
+        printArray(arr, n); 
+        break; 
+        case 4: 
+        mergeSort(arr, 0, n-1); 
+        printArray(arr, n); 
+        break; 
+        case 5: 
+        quickSort(arr, 0, n-1); 
+        printArray(arr, n); 
+        break; 
+        default: 
+        printf("Please input a valid Sorting Method"); 
+        break; 
+    } 
+return 0; 
+} 
